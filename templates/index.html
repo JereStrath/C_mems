@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Church Members</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+    <h1>Church Members</h1>
+    
+    <h2>Add Member</h2>
+    <form action="/add_member" method="post">
+        <label>First Name: <input type="text" name="first_name" required></label><br>
+        <label>Last Name: <input type="text" name="last_name" required></label><br>
+        <label>Contact Number: <input type="text" name="contact_number" required></label><br>
+        <label>Email: <input type="email" name="email"></label><br>
+        <label>Address: <input type="text" name="address"></label><br>
+        <!-- Add more fields here... -->
+        <button type="submit">Add Member</button>
+    </form>
+
+    <h2>View Members</h2>
+    <a href="/view_members">View Members</a>
+</body>
+</html>

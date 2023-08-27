@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Delete Member</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Delete Member</h1>
+
+    <p>Are you sure you want to delete the following member?</p>
+    <p><strong>First Name:</strong> {{ member[1] }}</p>
+    <p><strong>Last Name:</strong> {{ member[2] }}</p>
+
+    <form action="" method="post">
+        <button type="submit">Delete</button>
+    </form>
+
+    <a href="/view_members">Cancel</a>
+</body>
+</html>
